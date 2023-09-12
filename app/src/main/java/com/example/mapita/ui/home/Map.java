@@ -39,7 +39,7 @@ public class Map extends Fragment {
                 builder.include(punto2);
                 LatLngBounds bounds = builder.build();
 
-                int  padding = 100; // Ajusta este valor según tus preferencias
+                int  padding = 100;
                 CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, padding);
                 googleMap.animateCamera(cu);
             }
